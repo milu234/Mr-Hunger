@@ -72,10 +72,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     static LatLng defLocation = new LatLng(28.5, 77); //Delhi
     static LatLng curLocation = defLocation;
 
-    int locationType = GooglePlacesApi.TYPE_HOSPITAL;
+    int locationType = GooglePlacesApi.TYPE_RESTAURANT;
     int locationRankby = GooglePlacesApi.RANKBY_PROMINENCE;
 
-    public static final String  privacy_policy_url = "https://medloco-privacy-policy-git-master.mayankg.now.sh/";
+//    public static final String  privacy_policy_url = "https://medloco-privacy-policy-git-master.mayankg.now.sh/";
 
     LocationManager locMan;
     LocationListener locLis;
@@ -289,7 +289,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         curmarker = mMap.addMarker(new MarkerOptions().position(loc).title("Current Location")
                 .snippet("("+loc.latitude+","+loc.longitude+")")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+                .icon(BitmapDescriptorFactory.defaultMarker()));
     }
 
     void addMapMarker(LatLng loc, String name, String vicinity){
@@ -489,9 +489,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.privacy:
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(privacy_policy_url));
-                startActivity(i);
+//                Intent i = new Intent(Intent.ACTION_VIEW);
+//                i.setData(Uri.parse(privacy_policy_url));
+//                startActivity(i);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

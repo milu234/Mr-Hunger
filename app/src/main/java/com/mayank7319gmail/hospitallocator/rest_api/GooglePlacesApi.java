@@ -20,9 +20,9 @@ public class GooglePlacesApi {
     public static String WEB_KEY;
     public final static int SEARCH_RADIUS = 5000;
 
-    public static final int TYPE_HOSPITAL = 0;
-    public static final int TYPE_DOCTOR = 1;
-    public static final int TYPE_DENTIST = 2;
+    public static final int TYPE_RESTAURANT = 0;
+    public static final int TYPE_CAFE = 1;
+    public static final int TYPE_ELECTRONICS = 2;
 
     public static final int RANKBY_PROMINENCE = 0;
     public static final int RANKBY_DISTANCE = 1;
@@ -58,15 +58,15 @@ public class GooglePlacesApi {
 
     public int getType(String s){
         switch (s){
-            case "Hospital":
-                return TYPE_HOSPITAL;
-            case "Doctor/Clinic":
-                return TYPE_DOCTOR;
-            case "Dentist":
-                return TYPE_DENTIST;
+            case "Restaurant":
+                return TYPE_RESTAURANT;
+            case "Cafe":
+                return TYPE_CAFE;
+            case "Electronics":
+                return TYPE_ELECTRONICS;
         }
 
-        return TYPE_HOSPITAL;
+        return TYPE_RESTAURANT;
     }
 
     public int getRank(String s){
@@ -98,14 +98,14 @@ public class GooglePlacesApi {
         params.put("location",latlng);
 
         switch (type){
-            case TYPE_HOSPITAL:
+            case TYPE_RESTAURANT:
                 params.put("type","restaurant");
                 break;
-            case TYPE_DOCTOR:
-                params.put("type","police");
+            case TYPE_CAFE:
+                params.put("type","cafe");
                 break;
-            case TYPE_DENTIST:
-                params.put("type","dentist");
+            case TYPE_ELECTRONICS:
+                params.put("type","electronics_store");
                 break;
         }
 

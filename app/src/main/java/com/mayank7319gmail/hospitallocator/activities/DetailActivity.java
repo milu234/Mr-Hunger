@@ -184,7 +184,7 @@ public class DetailActivity extends AppCompatActivity {
         Picasso.with(ctx)
                 .load(url)
                 .fit()
-                .placeholder(R.drawable.medical_placeholder)
+                .placeholder(R.drawable.food)
                 .into(imageView2);
     }
 }

@@ -90,7 +90,7 @@ public class ListActivity extends AppCompatActivity {
             googlePlacesApi = new GooglePlacesApi(getApplicationContext());
             hospitalListClient = googlePlacesApi.getHospitalListClient();
 
-            HashMap<String, String > params = googlePlacesApi.getQueryParams(MainActivity.curLocation, GooglePlacesApi.TYPE_HOSPITAL, GooglePlacesApi.RANKBY_PROMINENCE);
+            HashMap<String, String > params = googlePlacesApi.getQueryParams(MainActivity.curLocation, GooglePlacesApi.TYPE_RESTAURANT, GooglePlacesApi.RANKBY_PROMINENCE);
             params.put("radius","50000");
             params.put("name", query);
 

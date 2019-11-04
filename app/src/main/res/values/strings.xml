@@ -1,19 +1,19 @@
 <resources>
-    <string name="app_name">MedLoco</string>
-    <string name="title_activity_maps">MedLoco</string>
+    <string name="app_name">Mr.Hunger</string>
+    <string name="title_activity_maps">Mr.Hunger</string>
     <string name="google_maps_key">AIzaSyBEXojLNEIYeKmyBdshlDooE-o-JfZCCsU</string>
     <string name="gps_network_not_enabled">GPS or network services are disabled. Do you wish to enable them? </string>
     <string name="open_location_settings">Enable GPS</string>
     <string name="cancel">Cancel</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="search_title">Search for Hospitals</string>
-    <string name="search_hint">Search for nearby hopsitals</string>
+    <string name="search_title">Search for Restaurants</string>
+    <string name="search_hint">Search for nearby restaurants</string>
     <string name="message_no_result">Sorry, we could not find any results matching your query. \nPlease try another query.</string>
 
     <string-array name="array_option_type">
-        <item>Hospital</item>
-        <item>Doctor/Clinic</item>
-        <item>Dentist</item>
+        <item>Restaurants</item>
+        <item>Cafe</item>
+        <item>Electronics</item>
     </string-array>
 
     <string-array name="array_option_rank">
